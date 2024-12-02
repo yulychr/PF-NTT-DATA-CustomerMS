@@ -16,20 +16,20 @@ public class Customer {
     private Long id;
 
     @Column(name="firstName", nullable = false)
-    @NotEmpty(message = "El nombre es obligatorio")
+    @NotEmpty
     private String firstName;
 
     @Column(name="lastName", nullable = false)
-    @NotEmpty(message = "El apellido es obligatorio")
+    @NotEmpty
     private String lastName;
 
     @Column(name="dni", unique = true, nullable = false)
-    @NotEmpty(message = "El DNI es obligatorio")
+    @NotEmpty
     @Pattern(regexp = "\\d{8}", message = "El DNI debe tener 8 dígitos")
     private String dni;
 
     @Column(name="email", nullable = false)
-    @Email(message = "Formato de correo electrónico inválido")
+    @Email
     @NotEmpty(message = "El email es obligatorio")
     private String email;
 
