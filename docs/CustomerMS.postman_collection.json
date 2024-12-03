@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "9085bc65-2578-41c4-9904-45454341706d",
+		"name": "CustomerMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39401715"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Luis\",\r\n    \"lastName\": \"Castillo\",\r\n    \"dni\": \"12345681\",\r\n    \"email\": \"castillo@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/customers/"
+			},
+			"response": []
+		},
+		{
+			"name": "List Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8086/customers/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8086/customers/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Carlos Armando\",\r\n    \"lastName\": \"Martinez editado\",\r\n    \"dni\": \"12345678\",\r\n    \"email\": \"carlos.martinez@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/customers/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8086/api/clientes/11"
+			},
+			"response": []
+		}
+	]
+}
