@@ -57,6 +57,7 @@ This collection includes all the endpoints and examples for testing the API.
 - **GET /customers/{id}**: Similar to the previous one, but this endpoint is used to retrieve the details of a specific customer. The diagram should show the query to the database to get the customer’s data.
 - **PUT /customers/{id}**: This endpoint allows updating the information of an existing customer. The diagram should show how the request is made to modify the customer’s data in the database.
 - **DELETE /customers/{id}**: This endpoint checks whether a customer has active accounts associated with them. If the customer has active accounts, the deletion is blocked; otherwise, the customer is deleted from the database. The diagram should show how CustomerMS interacts with AccountMS to check for active accounts, and if there are none, delete the customer from the database.
+  
 
 ![DIAGRAMA DE SECUENCIA DE -- CLIENTES -- FINAL drawio](https://github.com/user-attachments/assets/149333cc-b74f-4581-b3aa-cd8a614e4fa6)
 
@@ -64,8 +65,8 @@ This collection includes all the endpoints and examples for testing the API.
 
 You can find additional documentation for the project in the following documents:
 
-- [Analysis of SOLID Principles and Design Patterns](https://github.com/yulychr/PF-NTT-DATA-CustomerMS/blob/main/docs/Analis%20de%20principios%20solid%20y%20patrones%20de%20dise%C3%B1o.docx)
-- [Pruebas unitarias y checkStyle.docx](https://github.com/user-attachments/files/18002598/Pruebas.unitarias.y.checkStyle.docx)
+- [Analysis of SOLID Principles and Design Patterns](https://github.com/user-attachments/files/18002628/Analis.de.principios.solid.y.patrones.de.diseno.docx)
+- [Unit Testing and CheckStyle](https://github.com/user-attachments/files/18002598/Pruebas.unitarias.y.checkStyle.docx)
 
 
 Please refer to these documents for a detailed analysis of the SOLID principles, design patterns used, unit testing practices, and code style checks.
