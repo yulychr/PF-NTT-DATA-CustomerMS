@@ -40,16 +40,32 @@ This approach ensures the integrity of customer data and prevents accidental del
 - **Code Style**: Checkstyle
 - **API Documentation**: OpenAPI (Swagger)
 
+## Postman Collection
+
+You can find the Postman collection for testing the **CustomerMS** API at the following link:
+
+[CustomerMS Postman Collection](https://www.postman.com/yulyschr/test-api-customerms/overview)
+
+This collection includes all the endpoints and examples for testing the API.
+
 ## DIAGRAMs
 
 ### Sequence diagram 
 
-- POST /clientes: This endpoint creates a new customer in the database. The diagram should show how CustomerMS interacts with the database to insert the new customer.
-- GET /clientes: This endpoint lists all registered customers, retrieving the data from the database.
-- GET /clientes/{id}: Similar to the previous one, but this endpoint is used to retrieve the details of a specific customer. The diagram should show the query to the database to get the customer’s data.
-- PUT /clientes/{id}: This endpoint allows updating the information of an existing customer. The diagram should show how the request is made to modify the customer’s data in the database.
-- DELETE /clientes/{id}: This endpoint checks whether a customer has active accounts associated with them. If the customer has active accounts, the deletion is blocked; otherwise, the customer is deleted from the database. The diagram should show how CustomerMS interacts with AccountMS to check for active accounts, and if there are none, delete the customer from the database.
+- **POST /customers**: This endpoint creates a new customer in the database. The diagram should show how CustomerMS interacts with the database to insert the new customer.
+- **GET /customers**: This endpoint lists all registered customers, retrieving the data from the database.
+- **GET /customers/{id}**: Similar to the previous one, but this endpoint is used to retrieve the details of a specific customer. The diagram should show the query to the database to get the customer’s data.
+- **PUT /customers/{id}**: This endpoint allows updating the information of an existing customer. The diagram should show how the request is made to modify the customer’s data in the database.
+- **DELETE /customers/{id}**: This endpoint checks whether a customer has active accounts associated with them. If the customer has active accounts, the deletion is blocked; otherwise, the customer is deleted from the database. The diagram should show how CustomerMS interacts with AccountMS to check for active accounts, and if there are none, delete the customer from the database.
 
 ![DIAGRAMA DE SECUENCIA DE -- CLIENTES -- FINAL drawio](https://github.com/user-attachments/assets/149333cc-b74f-4581-b3aa-cd8a614e4fa6)
 
-## Additional Notes
+## Documentation
+
+You can find additional documentation for the project in the following documents:
+
+- [Analysis of SOLID Principles and Design Patterns](https://github.com/yulychr/PF-NTT-DATA-CustomerMS/blob/main/docs/Analis%20de%20principios%20solid%20y%20patrones%20de%20dise%C3%B1o.docx)
+- [Pruebas unitarias y checkStyle.docx](https://github.com/user-attachments/files/18002598/Pruebas.unitarias.y.checkStyle.docx)
+
+
+Please refer to these documents for a detailed analysis of the SOLID principles, design patterns used, unit testing practices, and code style checks.
