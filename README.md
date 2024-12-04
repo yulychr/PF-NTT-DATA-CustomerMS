@@ -48,6 +48,22 @@ You can find the Postman collection for testing the **CustomerMS** API at the fo
 
 This collection includes all the endpoints and examples for testing the API.
 
+## Database Setup
+
+To set up the database for the project, you can use the provided SQL script:
+
+- **[Download core_banking_system2.sql]()**: This script contains the necessary database schema and initial data for the core banking system.
+
+You can run this script to create the required tables and populate the database with initial data for the system to function correctly.
+
+### How to Run the Script
+1. Download the script by clicking the link above.
+2. Access your database management tool (MySQL).
+3. Open the SQL script.
+4. Execute the script in your database to set up the schema.
+
+This will create the necessary database structure and ensure that the system has the required data to operate.
+
 ## DIAGRAMs
 
 ### Sequence diagram 
@@ -65,8 +81,8 @@ This collection includes all the endpoints and examples for testing the API.
 
 You can find additional documentation for the project in the following documents:
 
-- [Analysis of SOLID Principles and Design Patterns](https://github.com/user-attachments/files/18002628/Analis.de.principios.solid.y.patrones.de.diseno.docx)
-- [Unit Testing and CheckStyle](https://github.com/user-attachments/files/18002598/Pruebas.unitarias.y.checkStyle.docx)
+- [Analysis of SOLID Principles and Design Patterns](https://github.com/yulychr/PF-NTT-DATA-CustomerMS/blob/main/docs/Analis%20de%20principios%20solid%20y%20patrones%20de%20dise%C3%B1o.docx)
+- [Unit Testing and CheckStyle](https://github.com/yulychr/PF-NTT-DATA-CustomerMS/blob/main/docs/Pruebas%20unitarias%20y%20checkStyle.docx)
 
 
 Please refer to these documents for a detailed analysis of the SOLID principles, design patterns used, unit testing practices, and code style checks.
