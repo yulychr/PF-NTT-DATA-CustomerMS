@@ -12,7 +12,7 @@ public interface CustomerService {
     public ResponseEntity<Object> createCustomer(Customer customer);
     public List<Customer> getCustomers();
     public Optional<Customer> getCustomerById(Long id);
-    public ResponseEntity<Customer> updateCustomer(Long id, Customer customer);
-    public ResponseEntity<Object> deleteCustomer(Long id);
+    public ResponseEntity<?> updateCustomer(Long id, Customer customer);
+    public ResponseEntity<?> deleteCustomer(Long id);
 
 }

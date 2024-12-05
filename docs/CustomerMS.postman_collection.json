@@ -37,6 +37,66 @@
 			"response": []
 		},
 		{
+			"name": "Create with the same dni",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Luis\",\r\n    \"lastName\": \"Castillo\",\r\n    \"dni\": \"12345681\",\r\n    \"email\": \"castillo@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/customers/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create without lastname",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Luis\",\r\n    \"lastName\": \"Castillo\",\r\n    \"dni\": \"\",\r\n    \"email\": \"castillo@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/customers/"
+			},
+			"response": []
+		},
+		{
 			"name": "List Customers",
 			"request": {
 				"method": "GET",
@@ -77,7 +137,25 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8086/api/clientes/11"
+				"url": "http://localhost:8086/customers/42"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete customer has active accounts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8086/customers/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer not found",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8086/customers/42"
 			},
 			"response": []
 		}
